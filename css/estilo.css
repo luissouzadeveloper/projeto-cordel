@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/*Fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Corpo da página*/
+html, body{
+    min-height: 100vh;
+    background-color: darkgrey;
+}
+
+/*Cabeçalho*/
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/*Título do cabeçalho*/
+header > h1{
+    padding-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-variant: small-caps;
+}
+
+/*Parágrafo do cabeçalho*/
+header > p{
+    padding-bottom: 50px;
+}
+
+/*Link*/
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*Seção global*/
+section{
+    padding: 10vh 30px 10vh;
+    line-height: 2em;
+}
+
+/*Secções normais*/
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+/*Seções com imagens de fundo*/
+section.imagem{
+    background-color: rgba(27, 27, 27, 0.884);
+    color: white;
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.521);
+    width: 400px;
+}
+
+/*Rodapé*/
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
