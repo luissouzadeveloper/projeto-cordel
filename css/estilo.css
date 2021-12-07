@@ -3,6 +3,15 @@
 /*Fonte*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Roboto:wght@100;300&family=Sriracha&display=swap');
+
+/*Variáveis*/
+:root{
+    --fonte1: Arial, Helvetica, sans-serif;
+    --fonte2: 'Roboto', sans-serif;
+    --fonte3: 'Sriracha', cursive;
+}
+
 /*Reset*/
 *{
     margin: 0;
@@ -11,6 +20,7 @@
 
 /*Corpo da página*/
 html, body{
+    font-family: var(--fonte1);
     min-height: 100vh;
     background-color: darkgrey;
 }
@@ -25,9 +35,10 @@ header{
 /*Título do cabeçalho*/
 header > h1{
     padding-top: 50px;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font2);
     font-weight: bolder;
     font-variant: small-caps;
+    font-size: 3em;
 }
 
 /*Parágrafo do cabeçalho*/
@@ -50,6 +61,8 @@ a:hover{
 section{
     padding: 10vh 30px 10vh;
     line-height: 2em;
+    font-family: var(--fonte3);
+    font-size: 2em;
 }
 
 /*Secções normais*/
@@ -66,7 +79,8 @@ section.imagem{
 
 section.imagem > p{
     background-color: rgba(0, 0, 0, 0.521);
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
 }
 
 /*Rodapé*/
